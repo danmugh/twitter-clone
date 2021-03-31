@@ -4,10 +4,18 @@ body {
 }
 
 .app {
+  /*display: flex;*/
+  /*height: 100vh;*/
+  /*max-width: 1280px;*/
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
+  /*padding: 0 10px;*/
+
   display: flex;
   height: 100vh;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 10px;
+  width: 30%;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
 }
