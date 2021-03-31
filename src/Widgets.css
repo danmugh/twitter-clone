@@ -1,8 +1,14 @@
 .widgets {
     flex: 0.3;
+
 }
 
 .widgets__input {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+
     display: flex;
     align-items: center;
     background-color: var(--twitter-background);
@@ -22,11 +28,19 @@
 }
 
 .widgets__widgetContainer {
+    /*position: sticky;*/
+    /*top: 0;*/
+    /*z-index: 100;*/
+    /*border: 1px solid var(--twitter-background);*/
+
+
     margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
     background-color: #f5f8fa;
     border-radius: 20px;
+    overflow-y: scroll;
+    /*height: 100vh;*/
 }
 
 .widgets__widgetContainer > h2 {

@@ -20,13 +20,6 @@ function Widgets() {
 
                 <TwitterTweetEmbed tweetId={"1373270025684058118"} />
 
-
-                <TwitterTimelineEmbed
-                    sourceType="profile"
-                    screenName="M_DanMugisho"
-                    options={{ height: 400 }}
-                />
-
                 <TwitterShareButton
                     url={"https://twitter.com/M_DanMugisho"}
                     options={{ text: "#reactjs is awesome", via: "M_DanMugisho" }}

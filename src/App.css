@@ -4,16 +4,10 @@ body {
 }
 
 .app {
-  /*display: flex;*/
-  /*height: 100vh;*/
-  /*max-width: 1280px;*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  /*padding: 0 10px;*/
 
   display: flex;
   height: 100vh;
-  width: 30%;
+  width: 40%;
 
   padding-left: 10%;
   padding-right: 10%;
@@ -25,12 +19,6 @@ body {
 
 
   .app {
-    /*display: flex;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
-
-    /*padding-left: 10%;*/
-    /*padding-right: 10%;*/
 
     display: block;
     height: 100vh;
@@ -39,6 +27,5 @@ body {
     padding-left: 0;
     padding-right: 0;
 
-    /*background-color: lawngreen;*/
   }
 }

@@ -62,24 +62,6 @@ function Feed() {
                 />
             ))}
 
-            {posts.map((post) => (
-                <Post
-                    key={post.text}
-                    displayName={post.displayName}
-                    username={post.username}
-                    verified={post.verified}
-                    text={post.text}
-                    avatar={post.avatar}
-                    image={post.image}
-                />
-            ))}
-
-            {/*<Post />*/}
-            {/*<Post />*/}
-            {/*<Post />*/}
-            {/*<Post />*/}
-            {/*<Post />*/}
-            {/*<Post />*/}
 
             <div>
                 <nav className={menu ? 'nav-menu active' : 'nav-menu'}>
