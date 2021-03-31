@@ -11,6 +11,7 @@ function TweetBox() {
         e.preventDefault();
 
         db.collection("posts").add({
+
             displayName: "Dan Mugisho",
             username: "M_DanMugisho",
             verified: true,
@@ -18,6 +19,7 @@ function TweetBox() {
             image: tweetImage,
             avatar:
                 "https://pbs.twimg.com/profile_images/1370689153982214147/VB4Cbhib_400x400.jpg",
+
         });
 
         setTweetMessage("");

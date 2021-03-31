@@ -6,6 +6,7 @@ import db from "./firebase";
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import SidebarMenu from "./SidebarMenu";
+import FlipMove from "react-flip-move";
 
 function Feed() {
 
@@ -22,8 +23,12 @@ function Feed() {
         handleMenu()
     };
 
+// .orderBy('createdAt', 'desc')
+
     useEffect(() => {
-        db.collection("posts").onSnapshot((snapshot) =>
+        db.collection("posts")
+
+            .onSnapshot((snapshot) =>
             setPosts(snapshot.docs.map((doc) => doc.data()))
         );
     }, []);
@@ -50,17 +55,19 @@ function Feed() {
 
             <TweetBox />
 
-            {posts.map((post) => (
-                <Post
-                    key={post.text}
-                    displayName={post.displayName}
-                    username={post.username}
-                    verified={post.verified}
-                    text={post.text}
-                    avatar={post.avatar}
-                    image={post.image}
-                />
-            ))}
+            <FlipMove >
+                {posts.map((post) => (
+                    <Post
+                        key={post.text}
+                        displayName={post.displayName}
+                        username={post.username}
+                        verified={post.verified}
+                        text={post.text}
+                        avatar={post.avatar}
+                        image={post.image}
+                    />
+                ))}
+            </FlipMove>
 
 
             <div>
