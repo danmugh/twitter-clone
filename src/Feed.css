@@ -17,7 +17,7 @@
     scrollbar-width: none; /* Firefox */
 }
 
-.feed__header {
+.navbar {
     position: sticky;
     top: 0;
     background-color: white;
@@ -26,11 +26,75 @@
     padding: 15px 20px;
 }
 
-.feed__header > h2 {
+.navbar > h2 {
     font-size: 20px;
     font-weight: 800;
-    padding-right: 10px;
+    margin-right: 50px;
 }
+
+.nav-menu {
+    background-color: white;
+    border: 1px solid var(--twitter-background);
+    width: 320px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 350;
+}
+
+.nav-menu.active {
+    left: 0;
+    transition: 450ms;
+}
+
+.nav-menu-items {
+    width: 100%;
+}
+
+.navbar-toggle {
+    width: 100%;
+    height: 80px;
+
+}
+
+.close-icon {
+    position: relative;
+    top: 10px;
+    left: 80%;
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 320;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.adjustment {
+    display: none;
+}
+
+/*.feed__header {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    background-color: white;*/
+/*    z-index: 100;*/
+/*    border: 1px solid var(--twitter-background);*/
+/*    padding: 15px 20px;*/
+/*}*/
+
+/*.feed__header > h2 {*/
+/*    font-size: 20px;*/
+/*    font-weight: 800;*/
+/*    padding-right: 10px;*/
+/*}*/
 
 .menu {
     display: none;
@@ -43,9 +107,6 @@
     position: relative;
 }
 
-.navbar {
-    /*position: fixed;*/
-}
 
 
 @media (max-width: 475px) {
@@ -58,19 +119,34 @@
         /*background-color: red;*/
     }
 
-    .feed__header {
+    /*.feed__header {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    position: sticky;*/
+    /*    top: 0;*/
+    /*    background-color: white;*/
+    /*    z-index: 200;*/
+    /*    border: 1px solid var(--twitter-background);*/
+    /*    padding: 15px 20px;*/
+
+    /*}*/
+
+    .navbar {
         display: flex;
         justify-content: space-between;
-        position: sticky;
-        top: 0;
+        position: fixed;
         background-color: white;
-        z-index: 200;
         border: 1px solid var(--twitter-background);
+        z-index: 300;
+        width: 100%;
         padding: 15px 20px;
-
     }
 
     .menu {
+        display: block;
+    }
+
+    .adjustment {
         display: block;
     }
 }
