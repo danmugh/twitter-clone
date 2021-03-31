@@ -19,3 +19,26 @@ body {
   padding-right: 10%;
 
 }
+
+@media (max-width: 475px) {
+
+
+
+  .app {
+    /*display: flex;*/
+    /*height: 100vh;*/
+    /*width: 100vw;*/
+
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
+
+    display: block;
+    height: 100vh;
+    width: 100%;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    /*background-color: lawngreen;*/
+  }
+}
