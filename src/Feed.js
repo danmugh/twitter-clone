@@ -7,6 +7,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import SidebarMenu from "./SidebarMenu";
 import FlipMove from "react-flip-move";
+import TwitterIcon from "@material-ui/icons/Twitter";
 
 function Feed() {
 
@@ -36,13 +37,18 @@ function Feed() {
     return (
         <div className="feed">
             <div className="navbar">
-                <span className="menu" >
-                        <MenuIcon
-                            onClick={ handleMenu }
-                            className="menu__icon"
-                            style={{ fontSize: '30px' }} />
+                <span className="menu__menuIcon" >
+                    <MenuIcon
+                        onClick={ handleMenu }
+                        className="menuIcon"
+                        style={{ fontSize: '30px' }} />
                 </span>
                 <h2>Home</h2>
+                <span className="menu__twitterIcon" >
+                    <TwitterIcon
+                        style={{ fontSize: '30px' }}
+                        className="twitterIcon" />
+                </span>
             </div>
             <div className="adjustment" style={{ paddingBottom: '85px' }} />
 

@@ -34,6 +34,9 @@
 .post__badge {
     font-size: 14px !important;
     color: var(--twitter-color);
+    top: 03px;
+    left: 0px;
+    position: relative;
 }
 
 .post__headerSpecial {
@@ -60,5 +63,9 @@
 
     .post__avatar {
         padding: 10px;
+        top: 17px;
+        left: 7px;
+        position: relative;
+
     }
 }

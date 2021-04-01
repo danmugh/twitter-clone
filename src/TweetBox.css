@@ -53,4 +53,10 @@
         margin-top: 20px !important;
         margin-right: 20px !important;
     }
+
+    .tweetBox__imageInput {
+        border: none;
+        padding: 10px;
+        margin-left: 10px;
+    }
 }
