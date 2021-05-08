@@ -57,6 +57,7 @@
 
 .nav-menu-items {
     width: 100%;
+    list-style-type: none;
 }
 
 .navbar-toggle {
@@ -149,6 +150,7 @@
         z-index: 300;
         width: 100%;
         padding: 5px 15px;
+        list-style-type: none;
     }
 
     .menu__menuIcon {

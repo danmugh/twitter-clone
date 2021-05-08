@@ -23,6 +23,10 @@
     background-color: var(--twitter-background);
 }
 
+.widgets__input > input:focus, .widgets__input > input:focus, .widgets__input > input:focus{
+    outline: none;
+}
+
 .widgets__searchIcon {
     color: gray;
 }

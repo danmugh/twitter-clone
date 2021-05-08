@@ -27,11 +27,12 @@ function Feed() {
 // .orderBy('createdAt', 'desc')
 
     useEffect(() => {
-        db.collection("posts")
 
-            .onSnapshot((snapshot) =>
+        db.collection("posts").onSnapshot((snapshot) =>
             setPosts(snapshot.docs.map((doc) => doc.data()))
         );
+
+        console.log('From Dbase')
     }, []);
 
     return (
@@ -46,7 +47,7 @@ function Feed() {
                 <h2>Home</h2>
                 <span className="menu__twitterIcon" >
                     <TwitterIcon
-                        style={{ fontSize: '30px' }}
+                        style={{ fontSize: '30px', display: `${ menu ? 'none' : 'block' }` }}
                         className="twitterIcon" />
                 </span>
             </div>
@@ -74,7 +75,6 @@ function Feed() {
                     />
                 ))}
             </FlipMove>
-
 
             <div>
                 <nav className={menu ? 'nav-menu active' : 'nav-menu'}>
